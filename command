@@ -1,6 +1,6 @@
 git clone --single-branch --branch 7.x https://github.com/laravel/laravel.git laravel-app
 cd laravel-app
-docker run --rm -v $(pwd):/app composer install
+docker run --rm -v $(pwd):/app composer install --ignore-platform-reqs
 cd ..
 sudo chown -R $USER:$USER laravel-app
 touch laravel-app/docker-compose.yml
