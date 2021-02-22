@@ -12,4 +12,14 @@ touch nginx/conf.d/app.conf
 
 cp .env.example .env
 
-# touch mysql/my.cnf
+#docker-compose up -d
+#docker-compose down
+#touch mysql/my.cnf
+
+#docker-compose exec app php artisan key:generate
+#docker-compose exec app php artisan config:cache
+
+#if env problrm
+#docker-compose exec app php artisan config:cache
+#docker-compose exec app php artisan config:clear
+#docker-compose exec app php artisan cache:clear
